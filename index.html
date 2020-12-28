@@ -1,28 +1,31 @@
-<!DOCTYPE html>
-<html>
-<body>
-
 <h2>What Can Laura Do?</h2>
 
 <p id="demo">Laura can hide this sentence!</p>
 
-<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Disappear!</button>
 
-</body>
-</html> 
-
-
-<!DOCTYPE html>
-<html>
-<body>
 
 <h2>What Else Can Laura Do?</h2>
 
 <p>Laura can show hidden messages.</p>
 
-<p id="demo" style="display:none">Merry Christmas!</p>
 
-<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Reveal!</button>
 
-</body>
-</html> 
+
+<head>
+<script>
+function myButt(x) {
+  document.getElementById("duh").innerHTML = "You listened..." + x;
+}
+</script>
+</head>
+<body>
+
+<h2>This is a test</h2>
+
+<p id="duh">Which will you choose?</p>
+
+<button type="button" onclick="myButt('')">Click here</button>
+<button type="button" onclick="myButt('NOT')">DON'T CLICK HERE</button>
+
